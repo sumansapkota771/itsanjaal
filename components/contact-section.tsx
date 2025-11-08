@@ -116,8 +116,8 @@ export default function ContactSection() {
                       <MapPin className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-red-700">Location</h4>
-                      <p className="text-red-600">Buddhanagar, Kathmandu</p>
+                      <h4 className="font-semibold text-black-700">Location</h4>
+                      <p className="text-black-700">Buddhanagar, Kathmandu</p>
                     </div>
                   </div>
                 </CardContent>
