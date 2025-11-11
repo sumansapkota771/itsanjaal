@@ -130,7 +130,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-red-700" />
-                <span className="text-Black-700">Nepal</span>
+                <a
+                  href="https://www.google.com/maps/place/M8PH%2B2J4,+Kathmandu+44600/@27.6849814,85.3281286,19z/data=!4m9!1m2!2m1!1sit+Sanjaal!3m5!1s0x39eb19b8d4cbfd63:0xf9f973d44ed6236a!8m2!3d27.6849814!4d85.329109!16s%2Fg%2F11j6tcqg8h?entry=ttu&g_ep=EgoyMDI1MTEwNS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black-700 hover:underline hover:text-red-700 transition-colors"
+                >
+                 Buddhanagar ,Kathmandu,Nepal
+                </a>
               </li>
             </ul>
           </div>
