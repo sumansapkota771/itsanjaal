@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, ChevronLeft, ChevronRight } from "lucide-react";
-
+import contact from "@/app/contact/page";
 const backgroundImages = [
   { url: "/hero/background1.png" },
   { url: "/hero/background2.jpeg" },
@@ -75,20 +75,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60"></div>
       </div>
 
-      {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-30 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-all duration-300 group"
-      >
-        <ChevronLeft className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
-      </button>
-
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-30 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-all duration-300 group"
-      >
-        <ChevronRight className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
-      </button>
+    
 
       {/* Slide Indicators */}
       <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex space-x-3 z-30">
@@ -145,7 +132,7 @@ export default function Hero() {
               size="lg"
               className="w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg group shadow-lg"
             >
-              Start Your Project
+              <Link href="/contact">Start Your Project</Link>
               <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Link href="#projects" className="w-full sm:w-auto">
@@ -169,9 +156,9 @@ export default function Hero() {
             }`}
           >
             {[
-              { number: "50+", label: "Projects Completed" },
-              { number: "50+", label: "Happy Clients" },
-              { number: "3+", label: "Years Experience" },
+              { number: "10+", label: "Projects Completed" },
+              { number: "30+", label: "Happy Clients" },
+              { number: "2+", label: "Years Experience" },
               { number: "24/7", label: "Support Available" },
             ].map((stat, index) => (
               <div
